@@ -1,0 +1,186 @@
+/**
+ * Elih — Design System Tokens (shadcn HSL)
+ * Extraído do site oficial da Elih. Drop-in para `src/index.css`.
+ * Estética Executive/Clinical: obsidiana + branco clínico, platina, vidro, borda metálica.
+ *
+ * Fontes (adicione no <head> ou via @import no topo do index.css):
+ *   Inter (400,500,600,700,800) · Space Grotesk (400,500) · Playfair Display (400,500,600,700 + italic)
+ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+@layer base {
+  /* ───────────────── LIGHT / Clinical (tema padrão de conteúdo) ───────────────── */
+  :root {
+    --background: 210 40% 98%;        /* clinical #F8FAFC */
+    --foreground: 229 84% 5%;         /* obsidian      */
+
+    --card: 0 0% 100%;                /* pristine      */
+    --card-foreground: 229 84% 5%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 229 84% 5%;
+
+    --primary: 229 84% 5%;            /* obsidian — botão sólido escuro */
+    --primary-foreground: 0 0% 100%;  /* pristine */
+
+    --secondary: 220 13% 91%;         /* soft-slate */
+    --secondary-foreground: 217 33% 17%;  /* graphite */
+
+    --muted: 210 40% 98%;
+    --muted-foreground: 217 33% 35%;
+
+    --accent: 222 47% 11%;            /* corp-navy */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;            /* soft-slate */
+    --input: 213 27% 84%;             /* inst-blue */
+    --ring: 222 47% 11%;              /* corp-navy */
+
+    --radius: 0.625rem;               /* 10px — raio base dos botões Elih */
+
+    /* Sidebar (clara) */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 217 33% 17%;
+    --sidebar-primary: 229 84% 5%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 98%;
+    --sidebar-accent-foreground: 229 84% 5%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 222 47% 11%;
+
+    /* Marca Elih — escala completa (use direto: hsl(var(--elih-obsidian))) */
+    --elih-obsidian: 229 84% 5%;
+    --elih-corp-navy: 222 47% 11%;
+    --elih-deep-navy: 223 50% 9%;
+    --elih-graphite: 217 33% 17%;
+    --elih-platinum: 214 32% 91%;
+    --elih-cool-gray: 229 5% 78%;
+    --elih-pristine: 0 0% 100%;
+    --elih-clinical: 210 40% 98%;
+    --elih-soft-slate: 220 13% 91%;
+    --elih-inst-blue: 213 27% 84%;
+  }
+
+  /* ───────────────── DARK / Executive (impacto, hero, navbar) ───────────────── */
+  .dark {
+    --background: 229 84% 5%;         /* obsidian */
+    --foreground: 214 32% 91%;        /* platinum */
+
+    --card: 223 50% 9%;              /* deep-navy */
+    --card-foreground: 214 32% 91%;
+
+    --popover: 222 47% 11%;          /* corp-navy */
+    --popover-foreground: 214 32% 91%;
+
+    --primary: 0 0% 100%;            /* pristine — botão claro sobre escuro */
+    --primary-foreground: 229 84% 5%;
+
+    --secondary: 217 33% 17%;        /* graphite */
+    --secondary-foreground: 214 32% 91%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 229 5% 78%;  /* cool-gray */
+
+    --accent: 222 47% 11%;
+    --accent-foreground: 214 32% 91%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;           /* platinum (usado com /10 nas bordas de vidro) */
+    --input: 217 33% 17%;
+    --ring: 214 32% 91%;
+
+    /* Sidebar (escura — navbar pill executiva) */
+    --sidebar-background: 229 84% 5%;
+    --sidebar-foreground: 214 32% 91%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 229 84% 5%;
+    --sidebar-accent: 222 47% 11%;
+    --sidebar-accent-foreground: 214 32% 91%;
+    --sidebar-border: 217 33% 17%;
+    --sidebar-ring: 214 32% 91%;
+  }
+}
+
+@layer base {
+  body {
+    font-feature-settings: "ss01", "cv01";
+  }
+  ::selection {
+    background: hsl(var(--elih-platinum));
+    color: hsl(var(--elih-obsidian));
+  }
+}
+
+/* ───────────────── Utilitários assinatura Elih ───────────────── */
+@layer components {
+  .glass-dark {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.65) 0%, rgba(12, 19, 36, 0.5) 100%);
+    backdrop-filter: blur(20px) saturate(1.2);
+    -webkit-backdrop-filter: blur(20px) saturate(1.2);
+  }
+  .glass-light {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(248, 250, 252, 0.5) 100%);
+    backdrop-filter: blur(20px) saturate(1.2);
+    -webkit-backdrop-filter: blur(20px) saturate(1.2);
+  }
+
+  .overline {
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  /* Borda metálica (silver gradient border, brilhante nos cantos) */
+  .edge {
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    padding: 1px;
+  }
+  .edge-soft {
+    background: linear-gradient(135deg,
+      rgba(226, 232, 240, 0.5) 0%, rgba(148, 163, 184, 0.08) 28%,
+      rgba(226, 232, 240, 0.02) 50%, rgba(148, 163, 184, 0.08) 72%,
+      rgba(226, 232, 240, 0.42) 100%);
+  }
+  .edge-strong {
+    background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.95) 0%, rgba(148, 163, 184, 0.25) 32%,
+      rgba(226, 232, 240, 0.12) 50%, rgba(148, 163, 184, 0.25) 68%,
+      rgba(255, 255, 255, 0.9) 100%);
+  }
+
+  /* Grade blueprint que some radialmente */
+  .grid-fade {
+    background-image:
+      linear-gradient(rgba(226, 232, 240, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(226, 232, 240, 0.04) 1px, transparent 1px);
+    background-size: 64px 64px;
+    -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 75%);
+            mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 75%);
+  }
+
+  /* Overlay de ruído sutil para fundos escuros */
+  .grain { position: relative; }
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.03;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .tracking-overline { letter-spacing: 0.18em; }
+}

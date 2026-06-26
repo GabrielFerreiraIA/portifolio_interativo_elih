@@ -1,0 +1,172 @@
+/**
+ * Portal SEESP × Elih — estilos base
+ * Tokens e utilitários do design system oficial da Elih (Executive/Clinical).
+ * Fontes: Inter · Space Grotesk · Playfair Display.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* ───────────────── LIGHT / Clinical ───────────────── */
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 229 84% 5%;
+    --card: 0 0% 100%;
+    --card-foreground: 229 84% 5%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 229 84% 5%;
+    --primary: 229 84% 5%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 13% 91%;
+    --secondary-foreground: 217 33% 17%;
+    --muted: 210 40% 98%;
+    --muted-foreground: 217 33% 35%;
+    --accent: 222 47% 11%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%;
+    --input: 213 27% 84%;
+    --ring: 222 47% 11%;
+    --radius: 0.625rem;
+
+    --elih-obsidian: 229 84% 5%;
+    --elih-corp-navy: 222 47% 11%;
+    --elih-deep-navy: 223 50% 9%;
+    --elih-graphite: 217 33% 17%;
+    --elih-platinum: 214 32% 91%;
+    --elih-cool-gray: 229 5% 78%;
+    --elih-pristine: 0 0% 100%;
+    --elih-clinical: 210 40% 98%;
+    --elih-soft-slate: 220 13% 91%;
+    --elih-inst-blue: 213 27% 84%;
+  }
+
+  /* ───────────────── DARK / Executive ───────────────── */
+  .dark {
+    --background: 229 84% 5%;
+    --foreground: 214 32% 91%;
+    --card: 223 50% 9%;
+    --card-foreground: 214 32% 91%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 214 32% 91%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 229 84% 5%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 214 32% 91%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 229 5% 78%;
+    --accent: 222 47% 11%;
+    --accent-foreground: 214 32% 91%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 32% 91%;
+    --input: 217 33% 17%;
+    --ring: 214 32% 91%;
+  }
+}
+
+@layer base {
+  * { border-color: hsl(var(--border)); }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: "Inter", system-ui, sans-serif;
+    font-feature-settings: "ss01", "cv01";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection { background: hsl(var(--elih-platinum)); color: hsl(var(--elih-obsidian)); }
+  :focus-visible { outline: 2px solid hsl(var(--elih-platinum)); outline-offset: 2px; border-radius: 4px; }
+}
+
+/* ───────────────── Utilitários assinatura Elih ───────────────── */
+@layer components {
+  .glass-dark {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.65) 0%, rgba(12, 19, 36, 0.5) 100%);
+    backdrop-filter: blur(20px) saturate(1.2);
+    -webkit-backdrop-filter: blur(20px) saturate(1.2);
+  }
+  .glass-light {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(248, 250, 252, 0.5) 100%);
+    backdrop-filter: blur(20px) saturate(1.2);
+    -webkit-backdrop-filter: blur(20px) saturate(1.2);
+  }
+
+  .overline {
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  /* Borda metálica (silver gradient border) — via ::before para herdar o raio */
+  .edge { position: relative; }
+  .edge::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .edge-soft::before {
+    background: linear-gradient(135deg,
+      rgba(226, 232, 240, 0.5) 0%, rgba(148, 163, 184, 0.08) 28%,
+      rgba(226, 232, 240, 0.02) 50%, rgba(148, 163, 184, 0.08) 72%,
+      rgba(226, 232, 240, 0.42) 100%);
+  }
+  .edge-strong::before {
+    background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.95) 0%, rgba(148, 163, 184, 0.25) 32%,
+      rgba(226, 232, 240, 0.12) 50%, rgba(148, 163, 184, 0.25) 68%,
+      rgba(255, 255, 255, 0.9) 100%);
+  }
+
+  /* Grade blueprint que some radialmente */
+  .grid-fade {
+    background-image:
+      linear-gradient(rgba(226, 232, 240, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(226, 232, 240, 0.04) 1px, transparent 1px);
+    background-size: 64px 64px;
+    -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 75%);
+            mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 75%);
+  }
+
+  /* Overlay de ruído sutil */
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.03;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .tracking-overline { letter-spacing: 0.18em; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

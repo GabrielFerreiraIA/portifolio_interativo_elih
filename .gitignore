@@ -1,0 +1,22 @@
+# Dependency directories
+node_modules/
+portal-seesp-elih/node_modules/
+
+# Build outputs
+dist/
+portal-seesp-elih/dist/
+
+# Local environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+portal-seesp-elih/.env
+portal-seesp-elih/.env.local
+
+# System/IDE files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

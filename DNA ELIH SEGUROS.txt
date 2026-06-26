@@ -1,0 +1,152 @@
+# Elih Seguros — Diretriz de Posicionamento e DNA de Marca
+*Este documento estabelece os fundamentos estratégicos, a identidade verbal, o perfil de público e os pilares de comunicação da Elih Seguros. Projetado para servir como o núcleo de verdade (Single Source of Truth) para inteligências artificiais, agências e equipes internas de criação.*
+
+---
+
+## 1. O Núcleo do Posicionamento (Brand DNA)
+
+```
+       [ PRECISÃO TÉCNICA ] <=================> [ CUIDADO HUMANO ]
+  (Dados, Auditoria, Negociação)            (Pós-venda VIP, Sem 0800, Presença)
+```
+
+A Elih Seguros não é uma corretora de planos de saúde convencional. Ela opera como uma **consultoria de alta performance em benefícios e gestão de risco corporativo**. O seu posicionamento equilibra a **precisão financeira** com o **cuidado humano resolutivo**.
+
+### A Grande Tensão Criativa (Tecnologia vs. Humanização)
+A visão estratégica dos sócios traz um componente tecnológico forte (mencionando referências aeroespaciais e de engenharia). No entanto, o setor de saúde exige **proximidade e sensibilidade**. Se a marca parecer puramente tecnológica, soará fria e distante; se parecer excessivamente assistencialista, perderá o perfil corporativo.
+
+A solução estratégica da Elih é a **Inteligência de Dados a Serviço do Cuidado**. A tecnologia (dados de sinistralidade, algoritmos de auditoria, integrações) opera silenciosamente nos bastidores para garantir que o atendimento humano na ponta seja ágil, preciso e livre de burocracias para o cliente.
+
+### Manifesto de Marca
+> "A saúde corporativa não pode ser uma caixa-preta no orçamento da sua empresa, nem uma fonte de frustração para a sua equipe. Há mais de 30 anos, nós existimos para trazer clareza onde há complexidade, neutralidade onde há conflito de interesses, e suporte direto onde o mercado oferece centrais telefônicas automatizadas. Entregamos o plano de saúde estruturado milimetricamente para o tamanho do seu negócio, gerido por inteligência e operado por pessoas de verdade."
+
+---
+
+## 2. Pilares de Posicionamento Único (UVP)
+
+A Elih se diferencia do mercado tradicional através de três pilares inegociáveis:
+
+### 1. Independência Comercial Absoluta (Isenção Analítica)
+*   **O que significa:** Diferente de corretoras que empurram operadoras específicas devido a comissões maiores, a Elih conduz análises neutras baseadas estritamente no custo-benefício para o caixa do cliente.
+*   **Foco na Copy:** "Neutralidade comercial que protege a saúde financeira da sua empresa."
+
+### 2. Protocolo Sem 0800 (Suporte Executivo Direto)
+*   **O que significa:** A Elih elimina intermediários e robôs de atendimento. O RH e a liderança do cliente têm acesso direto via canais ágeis (WhatsApp/Slack) a gestores de contas com autonomia de decisão.
+*   **Foco na Copy:** "Seu RH livre de centrais de atendimento. Linha executiva direta para decisões críticas em minutos."
+
+### 3. Gestão Ativa de Sinistralidade (Previsibilidade de Caixa)
+*   **O que significa:** A consultoria acompanha ativamente o uso do plano ao longo do contrato, em vez de aparecer apenas no período de renovação anual. Isso permite prever curvas de reajuste e implementar ações corretivas antes que o custo saia do controle.
+*   **Foco na Copy:** "Antecipamos o reajuste para que ele nunca seja uma surpresa no seu balanço."
+
+---
+
+## 3. Arquitetura de Público-Alvo (Dual Audience)
+
+A Elih opera em duas frentes de mercado distintas, exigindo abordagens específicas para cada canal de aquisição.
+
+```
+                  ┌──────────────── Elih Seguros ────────────────┐
+                  ▼                                              ▼
+       [ PÚBLICO A: PME / VAREJO ]                   [ PÚBLICO B: ENTERPRISE ]
+       - 1 a 99 vidas (CNPJ)                         - 100+ vidas (Médias/Grandes)
+       - Canal: Instagram / Meta Ads                 - Canal: LinkedIn / Outbound
+       - Decisor: Proprietário / Sócio               - Decisores: CFO, CEO, Diretor de RH
+```
+
+### Público A: PME / Varejo (Pequenas e Médias Empresas — 1 a 99 vidas)
+*   **Perfil do Decisor:** Proprietários, sócios ou gestores gerais de empresas em crescimento.
+*   **Onde encontrá-los:** Instagram, campanhas de tráfego pago baseadas em intenção de busca (Meta Ads e Google Search).
+*   **Dores Principais:**
+    *   Medo de depender do SUS para si, para a família ou para funcionários-chave.
+    *   Dificuldade de reter talentos devido à falta de benefícios estruturados.
+    *   Burocracia excessiva para contratar poucas vidas.
+    *   Preocupação com custos fixos em momentos de instabilidade no caixa.
+*   **Tom de Voz para este Público:** Acolhedor, didático, simplificado e ágil. A tecnologia deve ser apresentada como "praticidade e velocidade de contratação".
+*   **Palavras-Chave de Atração:** *Facilidade, Cuidado, Sem burocracia, Economia de até 30%, Atendimento ágil, Proteção para sua equipe.*
+
+### Público B: Enterprise / Atacado (Médias e Grandes Empresas — 100+ vidas)
+*   **Perfil do Decisor:** CFOs, diretores financeiros, CEOs e diretores de RH estratégico.
+*   **Onde encontrá-los:** LinkedIn, eventos corporativos, prospecção ativa B2B (Outbound) e consultoria de indicação.
+*   **Dores Principais:**
+    *   Reajustes anuais abusivos que desequilibram o planejamento orçamentário.
+    *   Complexidade regulatória e operacional de gerir um grande volume de vidas.
+    *   Sobrecarga do departamento de RH com suporte operacional de plano de saúde (reembolsos, carências, sinistros).
+    *   Falta de inteligência de dados sobre a utilização do plano (sinistralidade cega).
+*   **Tom de Voz para este Público:** Altamente analítico, sóbrio, pautado em dados de desempenho financeiro, inteligência de risco e processos transparentes.
+*   **Palavras-Chave de Atração:** *Previsibilidade, Sinistralidade sob gestão, Isenção de carência, SLA de atendimento, Controle de custos, Auditoria técnica.*
+
+---
+
+## 4. O Método Elih (Metodologia Proprietária)
+
+Toda a prestação de serviço da Elih é estruturada em torno de uma metodologia clara de três fases (A Bússola Consultiva), que descomplica o processo para a empresa parceira.
+
+```
+  [ 01. DIAGNÓSTICO ] ==========> [ 02. IMPLANTAÇÃO ] ==========> [ 03. CONCIERGE ]
+  Análise de perfil,              Transição sem fricção,          Suporte sem 0800,
+  rede e orçamento                gestão de carências             gestão de reajustes
+```
+
+### Fase 01: Diagnóstico e Desenho
+Análise profunda do perfil demográfico da empresa, distribuição geográfica das vidas, necessidades de rede referenciada e histórico de sinistros (se houver). O objetivo é encontrar o equilíbrio entre a proteção necessária e a eficiência fiscal.
+
+### Fase 02: Implantação Silenciosa
+Gestão burocrática integral do processo de transição entre operadoras. A Elih assume o levantamento de documentos, o mapeamento de carências e o suporte direto aos colaboradores na migração, garantindo estabilidade no uso dos benefícios e zero atrito no RH.
+
+### Fase 03: Concierge de Pós-Venda
+Suporte ativo no dia a dia. A equipe do cliente não fala com robôs ou atinge linhas de espera. Todas as questões administrativas — de inclusão de novos dependentes a acompanhamento de reembolsos complexos — são geridas pela estrutura de concierge da Elih.
+
+---
+
+## 5. Diretrizes de Copywriting e Linguagem (A Voz da Elih)
+
+A comunicação da Elih deve passar autoridade e sofisticação de mercado sem soar pedante ou excessivamente burocrática.
+
+### Glossário Corporativo (O que usar e o que evitar)
+
+| Evitar (Linguagem Tradicional) | Usar (Linguagem Elih Seguros) |
+| :--- | :--- |
+| "Vendedor de plano de saúde" | "Consultor de Benefícios Corporativos" |
+| "Nós vendemos planos de saúde" | "Desenhamos a arquitetura de benefícios ideal" |
+| "Ligue para a nossa central" | "Acesso direto à linha executiva de concierge" |
+| "Preços baratos / Descontos" | "Eficiência tributária / Otimização de custos" |
+| "Problemas com a operadora" | "Gestão e controle ativo de sinistralidade" |
+| "Fazer cotação" | "Análise consultiva de mercado" |
+
+### Princípios de Comunicação Verbal
+
+1.  **Assertividade Racional:** Fale sobre dados reais, economia percentual, relatórios de utilização e proteção de caixa. O empresário precisa ver o benefício como um investimento estruturado, não uma despesa inevitável.
+2.  **Sensibilidade Humana:** Trate a saúde como o maior ativo de uma organização. Use frases que lembrem que por trás de cada CNPJ há vidas, famílias e colaboradores que merecem dignidade e segurança.
+3.  **Transparência Didática:** Desmistifique as entrelinhas dos contratos de saúde (reajustes por faixa etária, sinistros, coparticipação) de forma simples e direta. Se o cliente entende como o plano funciona, ele valoriza a consultoria da Elih.
+
+---
+
+## 6. Identidade Visual e Universo de Estilo (Visual Identity System)
+
+A identidade visual da Elih materializa o conceito de **Quiet Luxury** (Luxo Silencioso): refinado, elegante, estruturado e isento de ruídos desnecessários.
+
+```
+[ AZUL OBSIDIANA ] ──> Base sólida, corporativa e madura (Fundo principal)
+[ PRATA PLATINA ]  ──> Detalhes metálicos, linhas finas de precisão (Firmeza)
+[ BRANCO GELO ]    ──> Legibilidade absoluta e clareza de dados (Contraste)
+```
+
+### Paleta de Cores e Significado Estratégico
+*   **Azul Obsidiana (`#020617` / `#0c1324`):** O tom primário do universo da marca. Remete ao ambiente corporativo estável, à credibilidade de grandes instituições e à profundidade de dados de inteligência.
+*   **Prata Platina (`#E2E8F0`):** Reflete a tecnologia, a solidez de 30 anos e o brilho discreto de materiais nobres. Utilizado em linhas de separação fina (1px) e elementos de realce.
+*   **Branco Gelo (`#FFFFFF`):** Usado para manter contraste máximo nas informações importantes e leituras técnicas, transmitindo pureza e transparência corporativa.
+*   **Proibição Absoluta do Vermelho:** O vermelho é vetado de todas as peças de marca da Elih. Alertas, avisos críticos ou destaques são comunicados por contrastes de luz (Ice White) ou ícones estruturados de segurança (Shields), distanciando a marca de estéticas hospitalares de urgência/emergência do varejo tradicional.
+
+### Tipografia Corporativa
+*   **Inter (Tipografia Primária / Corporativa):** Fornece estabilidade visual, perfeitamente estruturada para leituras de propostas longas, contratos e dados complexos no site. Deve ser utilizada com espaçamento denso e forte hierarquia de pesos.
+*   **Space Grotesk (Tipografia de Destaque / Dados Técnicos):** Utilizada em caixa alta (uppercase) com alto espaçamento entre as letras (letter-spacing) para sobretítulos, estatísticas de destaque, números de performance e marcadores de progresso. Passa o tom "NASA" de precisão analítica.
+
+---
+
+## 7. O Padrão de Atendimento (O SLA Elih)
+
+Este trecho serve para alinhar o discurso operacional da empresa ao DNA comercial:
+
+*   **Atendimento sem Fricção:** O cliente Elih não passa por menus digitais confusos, não ouve mensagens gravadas e não aguarda horas para saber se um procedimento foi autorizado.
+*   **Segurança nos Bastidores:** Toda a luta burocrática com as grandes operadoras é travada nos bastidores pela equipe técnica de concierge, entregando para o cliente apenas o resultado final: o problema resolvido.
+*   **Isenção Analítica:** O compromisso de apresentar opções de mercado transparentes, sem manipulação de preferências, garantindo a credibilidade que sustenta a empresa por três décadas.
