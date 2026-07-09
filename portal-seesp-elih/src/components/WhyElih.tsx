@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Headset, BadgePercent, FileCheck2 } from "lucide-react";
-import { Overline } from "./ui/GlassPanel";
 import { inViewSection, stagger, staggerItem } from "../lib/motion";
 
 const pilares = [
