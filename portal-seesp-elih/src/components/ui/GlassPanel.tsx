@@ -6,16 +6,15 @@ interface GlassPanelProps extends HTMLAttributes<HTMLDivElement> {
   edge?: "soft" | "strong" | "none";
 }
 
-/** Painel de vidro com borda metálica — base de cards e blocos. */
+/** Painel de vidro com borda metálica simplificado para o novo design system. */
 export function GlassPanel({ tone = "dark", edge = "soft", className, children, ...props }: GlassPanelProps) {
   return (
     <div
       className={cn(
-        "relative rounded-panel shadow-panel",
-        tone === "dark" ? "glass-dark text-platinum" : "glass-light text-graphite",
-        edge !== "none" && "edge",
-        edge === "soft" && "edge-soft",
-        edge === "strong" && "edge-strong",
+        "relative rounded-panel transition-all duration-200",
+        tone === "dark" 
+          ? "glass-dark text-white border border-white/10 shadow-panel" 
+          : "bg-white text-navy-950 border border-neutral-200 shadow-sm",
         className
       )}
       {...props}
@@ -25,7 +24,7 @@ export function GlassPanel({ tone = "dark", edge = "soft", className, children, 
   );
 }
 
-/** Sobretítulo Space Grotesk em caixa alta (assinatura da marca). */
+/** Sobretítulo Fredoka em caixa alta (assinatura da marca). */
 export function Overline({ children, className }: { children: React.ReactNode; className?: string }) {
-  return <span className={cn("overline text-platinum/60", className)}>{children}</span>;
+  return <span className={cn("overline", className)}>{children}</span>;
 }

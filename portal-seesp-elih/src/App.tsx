@@ -24,7 +24,7 @@ function ScrollManager() {
 
 export default function App() {
   return (
-    <div className="min-h-dvh bg-obsidian text-platinum antialiased">
+    <div className="min-h-dvh bg-white text-navy-950 antialiased">
       <ScrollManager />
       <Navbar />
       <main>

@@ -29,8 +29,8 @@ export function QuoteBar() {
       )}
       style={{ paddingBottom: "max(0.75rem, env(safe-area-inset-bottom))" }}
     >
-      <div className="mx-3 mb-1 flex items-center gap-2 rounded-2xl glass-dark edge edge-soft p-2 shadow-float">
-        <button onClick={goToForm} className={cn(buttonClasses("primary", "dark"), "flex-1 min-h-[46px]")}>
+      <div className="mx-3 mb-1 flex items-center gap-2 rounded-full bg-white border border-neutral-200 p-2 shadow-float font-sans">
+        <button onClick={goToForm} className={cn(buttonClasses("primary", "light"), "flex-1 min-h-[46px]")}>
           Fazer cotação especial
           <ArrowUpRight className="h-4 w-4" strokeWidth={1.75} />
         </button>
@@ -39,7 +39,7 @@ export function QuoteBar() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Falar no WhatsApp"
-          className="grid place-items-center h-[46px] w-[46px] rounded-[10px] border border-platinum/20 text-platinum hover:text-pristine hover:border-platinum/60 transition-colors shrink-0"
+          className="grid place-items-center h-[46px] w-[46px] rounded-full border border-neutral-300 bg-white text-navy-900 hover:bg-neutral-50 hover:border-neutral-400 transition-colors shrink-0"
         >
           <MessageCircle className="h-5 w-5" strokeWidth={1.75} />
         </a>

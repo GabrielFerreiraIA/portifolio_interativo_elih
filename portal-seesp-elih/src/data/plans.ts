@@ -110,8 +110,8 @@ export const plans: Plan[] = [
     condicaoSeesp:
       "Condição especial para associados do SEESP, com consultoria especializada Elih Seguros. Ameplan + Elih Seguros: benefícios que protegem o que mais importa.",
     obs: "Valores e coberturas sujeitos a análise de perfil.",
-    flyerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1782442774/Ameplan_dxumty.webp",
-    bannerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1782450337/Banner-Ameplan-_1__azcsxf.webp",
+    flyerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1783588998/VERTICAL_AMEPLAN_eo2h6o.png",
+    bannerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1783589014/HORIZONTAL_AMEPLAN_pk0pjn.png",
     tags: ["Mais econômico", "Indicado para começar"],
   },
   {
@@ -134,8 +134,8 @@ export const plans: Plan[] = [
     condicaoSeesp:
       "Condição especial para associados SEESP, com consultoria Elih Seguros. Categorias disponíveis: Essencial, Conforto, Bem-estar e Select. Valor inicial referente à categoria Essencial (adesão).",
     obs: "Valores e coberturas sujeitos a análise.",
-    flyerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1782442773/S%C3%A3o-Cristov%C3%A3o_dr4qhb.webp",
-    bannerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1782450337/Banner-S%C3%A3o-Cristov%C3%A3o-_1__yrnkye.webp",
+    flyerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1783588999/VERTICAL_SAOCRISTOVAO_diwjrv.png",
+    bannerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1783589017/HORIZONTAL_S%C3%83O_CRISTOVAO_nudxlq.png",
     tags: ["Mais escolhido", "Para a família toda"],
   },
   {
@@ -161,8 +161,8 @@ export const plans: Plan[] = [
     condicaoSeesp:
       "Condição especial para associados SEESP, com consultoria Elih Seguros — curadoria premium.",
     obs: "Plano Smart 200 SP. Valores e coberturas sujeitos a análise.",
-    flyerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1782442774/Hap-Vida_xyhenv.webp",
-    bannerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1782450337/Hapvida-Banner-_1__hpc5z5.webp",
+    flyerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1783589002/VERTICAL_HAPVIDA_libdwl.png",
+    bannerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1783589016/HORIZONTAL_HAPVIDA_vdzxcx.png",
     tags: ["Cobertura reforçada", "Curadoria premium"],
   },
   {
@@ -183,8 +183,8 @@ export const plans: Plan[] = [
     cobertura: { consultas: true, urgencia: true, rede: "Blue Med — Capital e Litoral" },
     condicaoSeesp:
       "Condição especial para associados SEESP, com consultoria Elih Seguros. Com a Blue Med você conta com cobertura na Capital e no Litoral, para ter tranquilidade em casa e durante suas viagens.",
-    flyerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1782442774/Blue-MEd_zqv4rg.webp",
-    bannerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1782450337/Banner-BlueMed-_1__ybhohj.webp",
+    flyerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1783588999/VERTICAL_BLUEMED_nxdlig.png",
+    bannerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1783589015/HORIZONTAL_BLUEMED_epg6o5.png",
     tags: ["Cobre litoral e capital", "Ideal para quem viaja"],
   },
   {
@@ -223,8 +223,8 @@ export const plans: Plan[] = [
     ],
     condicaoSeesp:
       "Condição especial para associados SEESP, com consultoria Elih Seguros. Plano Odontológico Master I.",
-    flyerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1782442773/Dental-Par_fl3chi.webp",
-    bannerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1782450337/Banner-Dental-Par-_1__vbfh77.webp",
+    flyerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1783588999/VERTICAL_DENTALPAR_qrdcqx.png",
+    bannerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1783589015/HORIZONTAL_DENTALPAR_miewgv.png",
     tags: ["Inclui ortodontia", "Cobertura completa"],
   },
   {
@@ -250,8 +250,8 @@ export const plans: Plan[] = [
     condicaoSeesp:
       "Condição especial para associados do SEESP, com consultoria Elih Seguros. Em parceria com o Sindicato dos Enfermeiros do Estado de São Paulo (SEESP).",
     obs: "Valores referentes ao plano Essencial 60. Condições e coberturas sujeitas a análise.",
-    flyerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1782442773/Mag_aap5hm.webp",
-    bannerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1782450338/Mag-Banner-_1__hfapme.webp",
+    flyerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1783589002/VERTICAL_MAG_vlurvm.png",
+    bannerImg: "https://res.cloudinary.com/dfwjwo2mz/image/upload/v1783589017/HORIZONTAL_MAG_klnihi.png",
     tags: ["Mais acessível", "Tranquilidade para a família"],
   },
 ];

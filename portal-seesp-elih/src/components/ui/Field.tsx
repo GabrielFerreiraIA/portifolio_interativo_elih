@@ -3,7 +3,7 @@ import type { InputHTMLAttributes, SelectHTMLAttributes, ReactNode } from "react
 import { cn } from "../../lib/cn";
 
 const fieldBase =
-  "w-full min-h-[48px] rounded-[10px] bg-white/[0.04] border border-platinum/15 px-4 py-3 text-sm text-platinum placeholder:text-platinum/40 transition-colors focus:outline-none focus:border-platinum/50 focus:bg-white/[0.06]";
+  "w-full min-h-[48px] rounded-md bg-white border border-neutral-300 px-4 py-3 text-sm text-navy-950 placeholder:text-neutral-400 transition-all focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 disabled:opacity-50";
 
 function Wrapper({
   label,
@@ -21,15 +21,15 @@ function Wrapper({
   children: ReactNode;
 }) {
   return (
-    <div className="flex flex-col gap-1.5">
-      <label htmlFor={htmlFor} className="text-xs font-medium text-platinum/80">
-        {label} {required && <span className="text-platinum/50">*</span>}
+    <div className="flex flex-col gap-1.5 text-left font-sans">
+      <label htmlFor={htmlFor} className="text-sm font-semibold text-navy-950">
+        {label} {required && <span className="text-danger-500">*</span>}
       </label>
       {children}
-      {hint && !error && <span className="text-[11px] text-platinum/45">{hint}</span>}
+      {hint && !error && <span className="text-[11px] text-neutral-500">{hint}</span>}
       {error && (
-        <span role="alert" className="text-[11px] text-platinum/90 flex items-center gap-1">
-          <span aria-hidden className="inline-block h-1.5 w-1.5 rounded-full bg-platinum/70" />
+        <span role="alert" className="text-[11px] font-semibold text-danger-500 flex items-center gap-1">
+          <span aria-hidden className="inline-block h-1.5 w-1.5 rounded-full bg-danger-500" />
           {error}
         </span>
       )}
@@ -52,7 +52,7 @@ export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
           ref={ref}
           id={fieldId}
           aria-invalid={Boolean(error)}
-          className={cn(fieldBase, error && "border-platinum/60", className)}
+          className={cn(fieldBase, error && "border-danger-500 focus:ring-danger-100 focus:border-danger-500", className)}
           {...props}
         />
       </Wrapper>
@@ -86,7 +86,7 @@ export function SelectField({
       <select
         id={fieldId}
         aria-invalid={Boolean(error)}
-        className={cn(fieldBase, "appearance-none bg-deep-navy", error && "border-platinum/60", className)}
+        className={cn(fieldBase, "appearance-none bg-white", error && "border-danger-500 focus:ring-danger-100 focus:border-danger-500", className)}
         {...props}
       >
         {placeholder && (

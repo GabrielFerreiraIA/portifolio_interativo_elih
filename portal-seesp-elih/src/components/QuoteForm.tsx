@@ -243,8 +243,8 @@ function getOptionIcon(campo: string, valor: string): LucideIcon | null {
 
 function QuoteBadge() {
   return (
-    <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.06] border border-white/10 relative overflow-hidden shrink-0">
-      <span className="font-grotesk text-[9px] uppercase tracking-[0.18em] text-platinum/80 relative">
+    <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-navy-50 border border-navy-100 relative overflow-hidden shrink-0">
+      <span className="font-display text-[9px] uppercase tracking-[0.16em] text-navy-600 relative font-semibold">
         Cotação Simplificada
       </span>
     </span>
@@ -441,14 +441,13 @@ export function QuoteForm({ defaultPlano }: Props) {
       : null;
 
   return (
-    <div className="relative rounded-panel bg-deep-navy glass-dark border border-white/[0.08] shadow-[0_20px_50px_-15px_rgba(2,6,23,0.6)] overflow-hidden min-h-[390px] flex flex-col">
-      <span aria-hidden className="pointer-events-none absolute inset-0 rounded-panel edge edge-soft" />
+    <div className="relative rounded-panel bg-white border border-neutral-200 shadow-lg overflow-hidden min-h-[390px] flex flex-col">
       <div className="relative p-5 sm:p-7 flex-1 flex flex-col">
         {/* Top Progress Header */}
         <div className="flex items-center justify-between gap-4 mb-5">
           <QuoteBadge />
           {status === "form" && currentStep !== "intro" && (
-            <span className="font-grotesk text-[10px] uppercase tracking-[0.14em] text-platinum/50 tabular-nums shrink-0">
+            <span className="font-sans text-[10px] uppercase tracking-[0.14em] text-neutral-500 font-semibold tabular-nums shrink-0">
               {stepIdx + 1} / {total}
             </span>
           )}
@@ -456,9 +455,9 @@ export function QuoteForm({ defaultPlano }: Props) {
 
         {status === "form" && currentStep !== "intro" && (
           <div className="mb-5">
-            <div className="h-1 rounded-full bg-white/[0.06] overflow-hidden">
+            <div className="h-1 rounded-full bg-neutral-100 overflow-hidden">
               <motion.div
-                className="h-full rounded-full bg-gradient-to-r from-platinum to-platinum/40"
+                className="h-full rounded-full bg-navy-900"
                 animate={{ width: `${progress}%` }}
                 transition={{ duration: 0.4, ease }}
               />
@@ -466,7 +465,7 @@ export function QuoteForm({ defaultPlano }: Props) {
             <button
               type="button"
               onClick={back}
-              className="mt-3.5 inline-flex items-center gap-1.5 text-[10px] font-grotesk uppercase tracking-[0.14em] text-platinum/50 hover:text-pristine transition-colors"
+              className="mt-3.5 inline-flex items-center gap-1.5 text-[10px] font-sans uppercase tracking-[0.14em] text-neutral-500 hover:text-navy-950 transition-colors font-semibold"
             >
               <ArrowLeft className="w-3.5 h-3.5" aria-hidden />
               Voltar
@@ -489,19 +488,19 @@ export function QuoteForm({ defaultPlano }: Props) {
                   initial={reduced ? false : { scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ type: "spring", stiffness: 260, damping: 18, delay: 0.1 }}
-                  className="flex items-center justify-center w-14 h-14 rounded-full bg-white/[0.08] border border-white/20 mb-4 text-pristine"
+                  className="flex items-center justify-center w-14 h-14 rounded-full bg-success-100 border border-success-500/20 mb-4 text-success-500"
                 >
                   <Check className="w-7 h-7" strokeWidth={2.5} />
                 </motion.span>
-                <h3 className="text-xl font-bold text-pristine">Cotação enviada!</h3>
-                <p className="mt-2 text-xs sm:text-sm text-platinum/75 max-w-sm leading-relaxed">
+                <h3 className="text-xl font-display font-bold text-navy-950">Cotação enviada!</h3>
+                <p className="mt-2 text-xs sm:text-sm text-neutral-600 max-w-sm leading-relaxed">
                   Obrigado, {nome.split(" ")[0] || "tudo certo"}. Preenchemos seus dados com sucesso. Se preferir, inicie seu atendimento imediato pelo WhatsApp abaixo:
                 </p>
                 <a
                   href={buildWhatsappLink(getWhatsappCtx())}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={cn(buttonClasses("primary", "dark"), "mt-5 w-full sm:w-auto")}
+                  className={cn(buttonClasses("primary", "light"), "mt-5 w-full sm:w-auto")}
                 >
                   <MessageCircle className="h-4 w-4" strokeWidth={2} />
                   Falar no WhatsApp agora
@@ -515,11 +514,11 @@ export function QuoteForm({ defaultPlano }: Props) {
                 animate={{ opacity: 1 }}
                 className="flex-1 flex flex-col items-center justify-center text-center py-4"
               >
-                <span className="flex items-center justify-center w-14 h-14 rounded-full bg-white/[0.08] border border-white/20 mb-4">
-                  <AlertCircle className="w-7 h-7 text-platinum" strokeWidth={2} />
+                <span className="flex items-center justify-center w-14 h-14 rounded-full bg-danger-100 border border-danger-500/20 mb-4 text-danger-500">
+                  <AlertCircle className="w-7 h-7" strokeWidth={2} />
                 </span>
-                <h3 className="text-lg font-bold text-pristine">Não foi possível enviar</h3>
-                <p className="mt-2 text-xs sm:text-sm text-platinum/75 max-w-sm leading-relaxed">
+                <h3 className="text-lg font-display font-bold text-navy-950">Não foi possível enviar</h3>
+                <p className="mt-2 text-xs sm:text-sm text-neutral-600 max-w-sm leading-relaxed">
                   Não conseguimos salvar sua solicitação no sistema, mas você pode obter a cotação diretamente com nosso consultor no WhatsApp:
                 </p>
                 <div className="mt-5 w-full flex flex-col sm:flex-row gap-2.5">
@@ -527,14 +526,14 @@ export function QuoteForm({ defaultPlano }: Props) {
                     href={buildWhatsappLink(getWhatsappCtx())}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={cn(buttonClasses("primary", "dark"), "flex-1")}
+                    className={cn(buttonClasses("primary", "light"), "flex-1")}
                   >
                     <MessageCircle className="h-4 w-4" strokeWidth={2} /> Falar no WhatsApp
                   </a>
                   <button
                     type="button"
                     onClick={() => setStatus("form")}
-                    className={cn(buttonClasses("secondary", "dark"), "flex-1")}
+                    className={cn(buttonClasses("secondary", "light"), "flex-1")}
                   >
                     Tentar novamente
                   </button>
@@ -552,16 +551,16 @@ export function QuoteForm({ defaultPlano }: Props) {
                 transition={{ duration: 0.4, ease }}
                 className="flex-1 flex flex-col justify-center py-2"
               >
-                <h3 className="text-xl sm:text-2xl font-bold text-pristine leading-snug">
-                  Simule sua cotação especial SEESP — economize até <span className="text-platinum">{REDUCAO}</span> no seu plano de saúde.
+                <h3 className="text-xl sm:text-2xl font-display font-bold text-navy-950 leading-snug">
+                  Simule sua cotação especial SEESP — economize até <span className="text-success-500 font-bold">{REDUCAO}</span> no seu plano de saúde.
                 </h3>
-                <p className="mt-3 text-xs sm:text-sm text-platinum/65 leading-relaxed">
+                <p className="mt-3 text-xs sm:text-sm text-neutral-600 leading-relaxed font-sans">
                   Responda a 4 perguntas rápidas e encontre as melhores opções para o seu perfil de forma consultiva.
                 </p>
                 <button
                   type="button"
                   onClick={next}
-                  className={cn(buttonClasses("primary", "dark"), "mt-6 self-start")}
+                  className={cn(buttonClasses("primary", "light"), "mt-6 self-start")}
                 >
                   Iniciar cotação
                   <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" aria-hidden />
@@ -719,29 +718,29 @@ function SelectStep({
                 key={opt.valor}
                 type="button"
                 onClick={() => onSelect(def.campo, opt.valor)}
-                className={`group relative flex flex-col items-center justify-center gap-2.5 rounded-2xl p-4 min-h-[110px] border transition-all duration-200 ${
+                className={`group relative flex flex-col items-center justify-center gap-2.5 rounded-2xl p-4 min-h-[110px] border transition-all duration-220 font-sans ${
                   selected
-                    ? "bg-white/[0.08] border-white/40 shadow-cta"
-                    : "bg-white/[0.02] border-white/10 hover:bg-white/[0.05] hover:border-white/20"
+                    ? "bg-navy-900 border-transparent text-white shadow-sm scale-[1.01]"
+                    : "bg-white border-neutral-200 text-neutral-800 hover:bg-neutral-50 hover:border-neutral-300 hover:text-navy-950"
                 }`}
               >
                 {Icon && (
                   <Icon
                     className={`w-7 h-7 transition-colors ${
-                      selected ? "text-pristine" : "text-platinum/50 group-hover:text-platinum/80"
+                      selected ? "text-white" : "text-neutral-500 group-hover:text-navy-950"
                     }`}
-                    strokeWidth={1.5}
+                    strokeWidth={1.75}
                     aria-hidden
                   />
                 )}
                 <span className={`text-xs font-semibold text-center leading-snug transition-colors ${
-                  selected ? "text-pristine" : "text-platinum/80 group-hover:text-platinum"
+                  selected ? "text-white font-bold" : "text-neutral-700 group-hover:text-navy-950"
                 }`}>
                   {opt.rotulo}
                 </span>
                 {selected && (
-                  <span className="absolute top-2 right-2 flex items-center justify-center w-4 h-4 rounded-full bg-pristine">
-                    <Check className="w-2.5 h-2.5 text-obsidian" strokeWidth={3.5} />
+                  <span className="absolute top-2 right-2 flex items-center justify-center w-4 h-4 rounded-full bg-white text-navy-950">
+                    <Check className="w-2.5 h-2.5 text-navy-950" strokeWidth={3.5} />
                   </span>
                 )}
               </button>
@@ -757,31 +756,31 @@ function SelectStep({
                 key={opt.valor}
                 type="button"
                 onClick={() => onSelect(def.campo, opt.valor)}
-                className={`group relative w-full text-left rounded-xl px-4 py-3 border transition-all duration-200 ${
+                className={`group relative w-full text-left rounded-xl px-4 py-3 border transition-all duration-200 font-sans ${
                   selected
-                    ? "bg-white/[0.08] border-white/40"
-                    : "bg-white/[0.02] border-white/10 hover:bg-white/[0.05] hover:border-white/20"
+                    ? "bg-navy-900 border-transparent text-white shadow-sm"
+                    : "bg-white border-neutral-200 text-neutral-800 hover:bg-neutral-50 hover:border-neutral-300 hover:text-navy-950"
                 }`}
               >
                 <span className="flex items-center justify-between gap-3">
                   <span className="min-w-0">
                     <span className={`block text-sm font-semibold leading-snug transition-colors ${
-                      selected ? "text-pristine" : "text-platinum/80 group-hover:text-platinum"
+                      selected ? "text-white font-bold" : "text-neutral-700 group-hover:text-navy-950"
                     }`}>
                       {opt.rotulo}
                     </span>
                     {opt.desc && (
                       <span className={`block text-[10px] mt-0.5 transition-colors ${
-                        selected ? "text-platinum/80" : "text-platinum/40 group-hover:text-platinum/55"
+                        selected ? "text-white/80" : "text-neutral-400 group-hover:text-neutral-500"
                       }`}>
                         {opt.desc}
                       </span>
                     )}
                   </span>
                   <span className={`flex items-center justify-center w-4 h-4 rounded-full border shrink-0 transition-all ${
-                    selected ? "bg-pristine border-pristine" : "border-white/30 group-hover:border-white/50"
+                    selected ? "bg-white border-white text-navy-950" : "border-neutral-300 group-hover:border-neutral-400"
                   }`}>
-                    {selected && <Check className="w-2.5 h-2.5 text-obsidian" strokeWidth={3.5} />}
+                    {selected && <Check className="w-2.5 h-2.5 text-navy-950" strokeWidth={3.5} />}
                   </span>
                 </span>
               </button>
@@ -826,14 +825,14 @@ function VidasCounterStep({
       className="flex-1 flex flex-col py-1"
     >
       <StepHeading icon={def.icon} label={pergunta} />
-      <p className="mt-1 text-[11px] text-platinum/50 leading-relaxed">
+      <p className="mt-1 text-[11px] text-neutral-500 leading-relaxed font-sans">
         {isCNPJ
           ? "Preencha as faixas etárias oficiais da ANS. Use +10 para preenchimento rápido."
           : "Preencha quantas pessoas de sua família estão em cada faixa etária."}
       </p>
 
       {/* Grid of faixas - Optimized for mobile */}
-      <div className="mt-3.5 space-y-1.5 max-h-[220px] overflow-y-auto pr-1 no-scrollbar">
+      <div className="mt-3.5 space-y-1.5 max-h-[220px] overflow-y-auto pr-1 no-scrollbar font-sans">
         {def.brackets.map((b) => {
           const count = counts[b.key] ?? 0;
           return (
@@ -841,18 +840,18 @@ function VidasCounterStep({
               key={b.key}
               className={`flex items-center gap-2 rounded-lg px-2.5 py-1.5 border transition-all duration-150 ${
                 count > 0
-                  ? "bg-white/[0.08] border-white/35"
-                  : "bg-white/[0.02] border-white/10"
+                  ? "bg-navy-50 border-navy-300 text-navy-950"
+                  : "bg-white border-neutral-200 text-neutral-800"
               }`}
             >
-              <span className={`text-[9px] font-grotesk font-bold uppercase tracking-[0.08em] tabular-nums px-1.5 py-0.5 rounded shrink-0 w-[42px] text-center transition-colors ${
-                count > 0 ? "bg-white/15 text-pristine" : "bg-white/5 text-platinum/35"
+              <span className={`text-[9px] font-sans font-bold uppercase tracking-[0.08em] tabular-nums px-1.5 py-0.5 rounded shrink-0 w-[42px] text-center transition-colors ${
+                count > 0 ? "bg-navy-900 text-white" : "bg-neutral-100 text-neutral-500"
               }`}>
                 {b.short}
               </span>
 
               <span className={`flex-1 text-xs font-semibold truncate transition-colors ${
-                count > 0 ? "text-pristine" : "text-platinum/55"
+                count > 0 ? "text-navy-950 font-bold" : "text-neutral-700"
               }`}>
                 {b.rotulo}
               </span>
@@ -862,7 +861,7 @@ function VidasCounterStep({
                   type="button"
                   onClick={() => onChange(b.key, -10)}
                   disabled={count < 10}
-                  className="flex items-center justify-center h-6 px-1 rounded border border-white/10 text-[9px] font-extrabold text-platinum/50 hover:border-white/30 disabled:opacity-20 active:scale-95 transition-all"
+                  className="flex items-center justify-center h-6 px-1 rounded border border-neutral-200 text-[9px] font-extrabold text-neutral-500 hover:border-neutral-350 disabled:opacity-20 active:scale-95 transition-all"
                 >
                   −10
                 </button>
@@ -871,7 +870,7 @@ function VidasCounterStep({
                   type="button"
                   onClick={() => onChange(b.key, -1)}
                   disabled={count === 0}
-                  className="flex items-center justify-center w-6 h-6 rounded border border-white/15 text-platinum/60 hover:border-white/35 disabled:opacity-20 active:scale-95 transition-all"
+                  className="flex items-center justify-center w-6 h-6 rounded border border-neutral-200 text-neutral-600 hover:border-neutral-350 disabled:opacity-20 active:scale-95 transition-all"
                 >
                   <Minus className="w-2.5 h-2.5" />
                 </button>
@@ -881,7 +880,7 @@ function VidasCounterStep({
                   initial={{ scale: 1.15 }}
                   animate={{ scale: 1 }}
                   className={`text-xs font-bold tabular-nums w-6 text-center transition-colors ${
-                    count > 0 ? "text-pristine" : "text-platinum/25"
+                    count > 0 ? "text-navy-950 font-bold" : "text-neutral-300"
                   }`}
                 >
                   {count}
@@ -890,7 +889,7 @@ function VidasCounterStep({
                 <button
                   type="button"
                   onClick={() => onChange(b.key, 1)}
-                  className="flex items-center justify-center w-6 h-6 rounded border border-white/20 text-platinum hover:border-white/40 active:scale-95 transition-all"
+                  className="flex items-center justify-center w-6 h-6 rounded border border-neutral-250 text-neutral-700 hover:border-neutral-350 active:scale-95 transition-all"
                 >
                   <Plus className="w-2.5 h-2.5" />
                 </button>
@@ -898,7 +897,7 @@ function VidasCounterStep({
                 <button
                   type="button"
                   onClick={() => onChange(b.key, 10)}
-                  className="flex items-center justify-center h-6 px-1 rounded border border-white/20 text-[9px] font-extrabold text-platinum hover:border-white/40 active:scale-95 transition-all"
+                  className="flex items-center justify-center h-6 px-1 rounded border border-neutral-250 text-[9px] font-extrabold text-neutral-700 hover:border-neutral-350 active:scale-95 transition-all"
                 >
                   +10
                 </button>
@@ -908,10 +907,10 @@ function VidasCounterStep({
         })}
       </div>
 
-      <div className="mt-2.5 flex items-center justify-between">
+      <div className="mt-2.5 flex items-center justify-between font-sans">
         <div className="flex items-center gap-1.5">
-          <span className="text-[10px] text-platinum/40 uppercase font-semibold">Total:</span>
-          <span className={cn("text-xs font-bold tabular-nums", total > 0 ? "text-pristine" : "text-platinum/25")}>
+          <span className="text-[10px] text-neutral-500 uppercase font-semibold">Total:</span>
+          <span className={cn("text-xs font-bold tabular-nums", total > 0 ? "text-navy-950 font-bold" : "text-neutral-300")}>
             {total} vida{total !== 1 ? "s" : ""}
           </span>
         </div>
@@ -961,17 +960,17 @@ function PorteStep({
       <StepHeading icon={def.icon} label={def.pergunta} />
 
       {/* Economia CNPJ tag - Compact for mobile */}
-      <div className="mt-3 rounded-xl bg-white/[0.04] border border-white/10 p-2.5 relative overflow-hidden shadow-cta">
+      <div className="mt-3 rounded-xl bg-success-100 border border-success-500/20 p-2.5 relative overflow-hidden shadow-sm">
         <div className="flex gap-2 items-center">
-          <TrendingDown className="w-4 h-4 text-platinum shrink-0" />
-          <p className="text-[10px] sm:text-xs font-semibold text-platinum/90 leading-tight">
+          <TrendingDown className="w-4 h-4 text-success-500 shrink-0" />
+          <p className="text-[10px] sm:text-xs font-semibold text-success-700 leading-tight font-sans">
             MEI ou CNPJ reduzem o valor do plano em até 35%
           </p>
         </div>
       </div>
 
       {/* CNPJ Input */}
-      <div className="mt-3.5">
+      <div className="mt-3.5 font-sans">
         <div className="relative">
           <input
             value={cnpj}
@@ -984,54 +983,54 @@ function PorteStep({
               }
             }}
             placeholder="CNPJ da empresa (opcional)"
-            className={`w-full bg-white/[0.02] border rounded-lg pl-3 pr-10 py-2.5 text-sm font-semibold tracking-wide text-pristine placeholder:text-platinum/40 focus:outline-none transition-colors ${
+            className={`w-full bg-white border rounded-lg pl-3 pr-10 py-2.5 text-sm font-semibold tracking-wide text-navy-950 placeholder:text-neutral-400 focus:outline-none transition-colors ${
               cnpjStatus === "invalid" || cnpjStatus === "error" || cnpjStatus === "notfound"
-                ? "border-red-400/50 focus:border-red-400"
+                ? "border-danger-500 focus:border-danger-500 focus:ring-2 focus:ring-danger-100"
                 : cnpjStatus === "valid"
-                ? "border-pristine/60 focus:border-pristine"
-                : "border-white/10 focus:border-white/30"
+                ? "border-success-500 focus:border-success-500 focus:ring-2 focus:ring-success-100"
+                : "border-neutral-200 focus:border-sky-500 focus:ring-2 focus:ring-sky-100"
             }`}
           />
           <span className="absolute right-3 top-1/2 -translate-y-1/2">
             {cnpjStatus === "loading" ? (
-              <Loader2 className="w-4 h-4 text-platinum animate-spin" />
+              <Loader2 className="w-4 h-4 text-neutral-400 animate-spin" />
             ) : cnpjStatus === "valid" ? (
-              <Check className="w-4 h-4 text-platinum" strokeWidth={2.5} />
+              <Check className="w-4 h-4 text-success-500" strokeWidth={2.5} />
             ) : (
-              <Search className="w-4 h-4 text-platinum/35" />
+              <Search className="w-4 h-4 text-neutral-400" />
             )}
           </span>
         </div>
 
         {cnpjStatus === "valid" && empresa ? (
-          <div className="mt-2 rounded-lg bg-white/[0.06] border border-white/15 px-3 py-2">
-            <p className="text-[11px] font-bold text-pristine truncate leading-snug">
+          <div className="mt-2 rounded-lg bg-neutral-50 border border-neutral-200 px-3 py-2">
+            <p className="text-[11px] font-bold text-navy-950 truncate leading-snug">
               {empresa.razao_social || "Empresa encontrada"}
             </p>
-            <p className="mt-0.5 text-[9px] text-platinum/50">
+            <p className="mt-0.5 text-[9px] text-neutral-500">
               {[empresa.situacao, empresa.porte, [empresa.municipio, empresa.uf].filter(Boolean).join("/")].filter(Boolean).join(" · ")}
             </p>
           </div>
         ) : cnpjStatus === "invalid" ? (
-          <p className="mt-1.5 text-[10px] text-red-300">CNPJ inválido — confira os números.</p>
+          <p className="mt-1.5 text-[10px] text-danger-500">CNPJ inválido — confira os números.</p>
         ) : cnpjStatus === "notfound" ? (
-          <p className="mt-1.5 text-[10px] text-red-300">CNPJ não encontrado na Receita.</p>
+          <p className="mt-1.5 text-[10px] text-danger-500">CNPJ não encontrado na Receita.</p>
         ) : cnpjStatus === "error" ? (
-          <p className="mt-1.5 text-[10px] text-red-300">Consulta indisponível — preencha manualmente abaixo.</p>
+          <p className="mt-1.5 text-[10px] text-danger-500">Consulta indisponível — preencha manualmente abaixo.</p>
         ) : null}
       </div>
 
       {/* Divisor */}
       <div className="mt-3 flex items-center gap-2">
-        <span className="h-px flex-1 bg-white/5" />
-        <span className="text-[9px] font-grotesk uppercase tracking-[0.16em] text-platinum/30">
+        <span className="h-px flex-1 bg-neutral-200" />
+        <span className="text-[9px] font-sans font-bold uppercase tracking-[0.16em] text-neutral-400">
           ou selecione manualmente
         </span>
-        <span className="h-px flex-1 bg-white/5" />
+        <span className="h-px flex-1 bg-neutral-200" />
       </div>
 
       {/* Manual block selection */}
-      <div className="mt-2 grid grid-cols-2 gap-2">
+      <div className="mt-2 grid grid-cols-2 gap-2 font-sans">
         {def.blocks.map((blk) => {
           const isOn = selected === blk.valor;
           return (
@@ -1039,20 +1038,20 @@ function PorteStep({
               key={blk.valor}
               type="button"
               onClick={() => onSelectBlock(blk.valor)}
-              className={`group relative flex flex-col items-start rounded-xl px-3 py-2 border text-left transition-all duration-200 ${
+              className={`group relative flex flex-col items-start rounded-xl px-3 py-2 border text-left transition-all duration-220 ${
                 isOn
-                  ? "bg-white/[0.08] border-white/45 shadow-cta"
-                  : "bg-white/[0.02] border-white/10 hover:bg-white/[0.05] hover:border-white/20"
+                  ? "bg-navy-900 border-transparent text-white shadow-sm"
+                  : "bg-white border-neutral-200 hover:bg-neutral-50 hover:border-neutral-300 text-neutral-800"
               }`}
             >
               <span className={`text-xs font-bold transition-colors ${
-                isOn ? "text-pristine" : "text-platinum/85 group-hover:text-platinum"
+                isOn ? "text-white" : "text-neutral-700 group-hover:text-navy-950"
               }`}>
                 {blk.rotulo}
               </span>
               {blk.desc && (
                 <span className={`text-[9px] leading-snug transition-colors truncate w-full ${
-                  isOn ? "text-platinum" : "text-platinum/40 group-hover:text-platinum/50"
+                  isOn ? "text-white/80" : "text-neutral-400 group-hover:text-neutral-500"
                 }`}>
                   {blk.desc}
                 </span>
@@ -1071,10 +1070,10 @@ function PorteStep({
 function StepHeading({ icon: Icon, label }: { icon: LucideIcon; label: string }) {
   return (
     <div className="flex items-start gap-2.5">
-      <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-white/[0.08] border border-white/10 shrink-0">
-        <Icon className="w-4 h-4 text-pristine" strokeWidth={2} aria-hidden />
+      <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-navy-50 border border-navy-100 shrink-0">
+        <Icon className="w-4 h-4 text-navy-600" strokeWidth={1.75} aria-hidden />
       </span>
-      <h3 className="text-sm sm:text-base font-bold text-pristine leading-snug pt-1 text-balance">
+      <h3 className="text-sm sm:text-base font-display font-bold text-navy-950 leading-snug pt-1 text-balance">
         {label}
       </h3>
     </div>
@@ -1109,7 +1108,7 @@ function TextField({
         }
       }}
       placeholder={placeholder}
-      className="w-full bg-transparent border-0 border-b border-white/20 px-0 py-2.5 text-xl sm:text-2xl font-bold text-pristine placeholder:text-platinum/30 focus:outline-none focus:border-white transition-colors"
+      className="w-full bg-transparent border-0 border-b border-neutral-200 px-0 py-2.5 text-xl sm:text-2xl font-display font-bold text-navy-950 placeholder:text-neutral-300 focus:outline-none focus:border-navy-900 transition-colors"
     />
   );
 }
@@ -1128,7 +1127,7 @@ function NextButton({
       type="button"
       onClick={onClick}
       disabled={disabled}
-      className="group mt-4 inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-pristine text-obsidian text-xs sm:text-sm font-semibold hover:bg-platinum transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed shadow-cta self-end"
+      className="group mt-4 inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-navy-900 text-white text-xs sm:text-sm font-display font-semibold hover:bg-navy-950 transition-all duration-220 disabled:opacity-30 disabled:cursor-not-allowed shadow-sm self-end"
     >
       {label}
       <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1" aria-hidden />

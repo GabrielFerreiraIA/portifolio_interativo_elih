@@ -9,15 +9,15 @@ export function CotacaoSection() {
       id="cotacao"
       {...inViewSection}
       variants={fadeUp}
-      className="relative bg-obsidian pb-24 pt-12 sm:pt-16 scroll-mt-24"
+      className="relative bg-navy-950 pb-24 pt-12 sm:pt-16 scroll-mt-24"
     >
       <div className="mx-auto max-w-3xl px-5">
         <div className="text-center">
           <Overline>Cotação especial</Overline>
-          <h2 className="mt-3 text-2xl sm:text-3xl font-bold tracking-tight text-pristine text-balance">
+          <h2 className="mt-3 text-2xl sm:text-3xl font-display font-bold tracking-tight text-white text-balance">
             Receba sua cotação especial SEESP
           </h2>
-          <p className="mt-2 text-sm text-platinum/60 text-balance">
+          <p className="mt-2 text-sm text-navy-200 text-balance">
             Preencha em 30 segundos. Um consultor da Elih retorna com a melhor condição para o seu perfil.
           </p>
         </div>

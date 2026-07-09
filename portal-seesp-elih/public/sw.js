@@ -12,7 +12,8 @@ if (self.workbox) {
     { url: '/manifest.webmanifest', revision: '1' },
     { url: '/favicon.svg', revision: '1' },
     { url: '/registrSW.js', revision: '1' },
-    { url: '/logos/elih-logo.png', revision: '1' },
+    { url: '/logos/elih-seguros-lockup-color.png', revision: '1' },
+    { url: '/logos/elih-seguros-lockup-white-on-navy.png', revision: '1' },
     { url: '/icons/icon-192.png', revision: '1' },
     { url: '/icons/icon-512.png', revision: '1' },
     { url: '/icons/icon-maskable-512.png', revision: '1' }
@@ -79,7 +80,8 @@ if (self.workbox) {
     '/manifest.webmanifest',
     '/favicon.svg',
     '/registrSW.js',
-    '/logos/elih-logo.png',
+    '/logos/elih-seguros-lockup-color.png',
+    '/logos/elih-seguros-lockup-white-on-navy.png',
     '/icons/icon-192.png',
     '/icons/icon-512.png',
     '/icons/icon-maskable-512.png'
